@@ -10,7 +10,7 @@ npm init -y //Инициализация нового проекта package.jso
 
 git init  //Инициализация репозитория.
 
-touch gulpfile.js //Создание файла gulpfile.js 
+touch gulpfile.js // Создание файла gulpfile.js
 
 npm install gulp-cli -g   //Установка gulp-cli глобально.
 
