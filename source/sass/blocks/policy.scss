@@ -1,0 +1,33 @@
+.policy {
+  width: rem(280px);
+  margin: 0 auto;
+  font-size: rem(14px);
+
+  @include tablet {
+    // width: remt(230px);
+  }
+}
+
+.policy__list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.policy__item {
+  padding: rem(14px) 0;
+  padding-left: rem(10px);
+}
+
+.policy a {
+  padding-right: rem(10px);
+  color: $vivid-orange;
+  text-decoration: underline;
+}
+
+.policy__privacy {
+  border-right: 1px solid $vivid-orange;
+}
+

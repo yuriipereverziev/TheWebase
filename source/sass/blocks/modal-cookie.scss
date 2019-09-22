@@ -1,0 +1,130 @@
+.cookie {
+  position: fixed;
+  width: 100%;
+  background-color: $isabelline;
+  z-index: 99;
+}
+
+.modal-cookie {
+  display: none;
+  bottom: 0;
+  left: 0;
+}
+
+.cookie-show {
+  display: block;
+}
+
+.cookie-wrapper {
+  position: relative;
+  width: rem(320px);
+  margin: 0 auto;
+
+  @include tablet {
+    width: remt(768px);
+  }
+
+  @include desktop {
+    width: reml(900px);
+  }
+}
+
+.cookie__text {
+  width: rem(250px);
+  padding: rem(20px) rem(20px) rem(20px) rem(50px);
+  margin: 0 auto;
+
+  @include tablet {
+    width: remt(618px);
+    padding: remt(20px) remt(50px) remt(20px) remt(100px);
+    margin: 0 auto;
+
+    &::before {
+      left: 50px;
+    }
+  }
+
+  @include desktop {
+    width: reml(750px);
+  }
+}
+
+.no-webp .no-webp .cookie__text:before {
+  background-image: url('../images/cookie.png'); }
+
+.cookie__text:before {
+  content: '';
+  position: absolute;
+  width: rem(30px);
+  height: rem(30px);
+  left: rem(10px);
+  top: rem(25px);
+  background-repeat: no-repeat;
+
+  @include tablet {
+    top: reml(40px);
+    left: remt(135px);
+  }
+
+  @include desktop {
+    left: reml(150px);
+  }
+}
+
+.cookie__link {
+  color: $vivid-orange;
+}
+
+
+.cookie-close {
+  position: absolute;
+  top: rem(8px);
+  right: rem(8px);
+  width: rem(18px);
+  height: rem(18px);
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  transition: all 600ms;
+
+  &:hover {
+    transform: rotate(90deg);
+  }
+
+  @include tablet {
+    right: remt(18px);
+  }
+}
+
+.cookie-close::before,
+.cookie-close::after {
+  content: '';
+  position: absolute;
+  top: rem(9px);
+  left: 0;
+  width: rem(18px);
+  height: 1px;
+  background-color: $vivid-orange;
+}
+
+.cookie-close::before {
+  transform: rotate(45deg);
+}
+
+.cookie-close::after {
+  transform: rotate(-45deg);
+}
+
+.button-cookie {
+  display: inline-block;
+  width: rem(100px);
+  font-size: rem(10px);
+  padding: 0;
+  margin: 0;
+  margin-left: rem(8px);
+}
+
+.cookie__text:before { background-image: url(../images/cookie.webp); }
+
+.no-webp .cookie__text:before { background-image: url(../images/cookie.webp); }
+

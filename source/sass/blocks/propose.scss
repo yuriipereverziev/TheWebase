@@ -1,0 +1,107 @@
+.propose {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: $maastrich-blue;
+  padding: 0 rem(15px);
+  margin: 0 auto;
+  background-image: url('../images/for.svg');
+  background-position: center 20px;
+  background-repeat: no-repeat;
+  background-size: auto;
+
+  @include tablet {
+    width: 100%;
+    padding: 0 remt(43px);
+    margin: 0;
+    background-size: 60%;
+    background-position: center center;
+  }
+
+   @include laptop {
+    padding: 0 reml(72px);
+    background-size: 55%;
+  }
+
+  @include desktop {
+    padding: 0 reml(100px);
+    background-size: 45%;
+  }
+}
+
+.propose__title {
+  color: $vivid-orange;
+  font-weight: bold;
+  font-size: rem(24px);
+  text-align: center;
+  text-transform: uppercase;
+  padding: rem(40px) 0 rem(50px) 0;
+  margin: 0;
+
+  @include tablet {
+    // width: rem(500px);
+    // font-size: rem(32px);
+    padding: remt(35px) 0;
+    position: relative;
+  }
+
+  @include laptop {
+    width: reml(700px);
+    font-size: reml(34px);
+    padding: reml(35px) 0;
+  }
+
+  @include desktop {
+    font-size: reml(42px);
+  }
+}
+
+.propose__text {
+  position: relative;
+  font-family: IBM Plex Serif;
+  color: $isabelline;
+  padding: 0 rem(10px) 0 rem(10px);
+  margin: 0;
+  margin-bottom: rem(30px);
+  text-align: justify;
+
+  @include tablet {
+    width: remt(600px);
+    font-size: remt(20px);
+    padding: 0;
+    margin-bottom: remt(20px);
+
+  }
+
+  @include laptop {
+    width: reml(700px);
+    font-size: reml(22px);
+    padding: 0;
+  }
+}
+
+.propose__text--color {
+  color: $vivid-orange;
+  font-weight: bold;
+}
+
+.propose__button {
+  margin-bottom: rem(40px);
+
+  @include tablet {
+    padding: remt(12px) remt(35px);
+    margin-bottom: remt(35px);
+    position: relative;
+  }
+}
+
+.propose__title,
+.propose__text,
+.propose__button {
+  opacity: 0;
+  bottom: -30px;
+}
+
+

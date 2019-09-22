@@ -1,0 +1,39 @@
+.page-footer {
+  text-align: center;
+}
+
+.page-footer__social {
+  display: flex;
+  justify-content: space-around;
+  width: rem(280px);
+  padding: rem(65px) 0 rem(10px);
+  margin: 0 auto;
+
+  @include tablet {
+    // width: remt(230px);
+    padding: 0;
+    padding-top: remt(15px);
+  }
+}
+
+.social__list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.social__list li:hover {
+  @include tablet {
+    transform: scale(1.1);
+    transition: 0.4s linear;
+  }
+}
+
+.social__item {
+  width: rem(80px);
+}
+
+.social__link img {
+  vertical-align: bottom;
+}

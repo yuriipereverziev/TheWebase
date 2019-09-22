@@ -1,0 +1,118 @@
+@font-face {
+  font-family: 'ibm_plex_sansbold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/ibmplexsans-bold-webfont.woff2') format('woff2'), url('../fonts/ibmplexsans-bold-webfont.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ibm_plex_sansregular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/ibmplexsans-regular-webfont.woff2') format('woff2'), url('../fonts/ibmplexsans-regular-webfont.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ibm_plex_serif_semiboldRg';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/ibmplexserif-semibold-webfont.woff2') format('woff2'), url('../fonts/ibmplexserif-semibold-webfont.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ibm_plex_serifregular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/ibmplexserif-regular-webfont.woff2') format('woff2'), url('../fonts/ibmplexserif-regular-webfont.woff') format('woff');
+  font-display: swap;
+}
+
+html {
+  font-size: 16px;
+
+  @include tablet {
+    font-size: 18px;
+  }
+
+  @include laptop {
+    font-size: 22px;
+  }
+  @include desktop {
+    font-size: 24px;
+  }
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 320px;
+  padding: 0;
+  margin: 0;
+  font-family: 'ibm_plex_sansregular', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.42;
+  background-color: $white-color;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+}

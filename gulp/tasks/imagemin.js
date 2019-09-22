@@ -8,6 +8,6 @@ module.exports = function() {
 	      $.gp.imagemin.jpegtran({progressive: true}),
 	      $.gp.imagemin.svgo()
 	    ]))
-	    .pipe($.gulp.dest($.config.root + '/assets/img'));
+	    .pipe($.gulp.dest($.config.root + '/assets/images'));
 	});
 };

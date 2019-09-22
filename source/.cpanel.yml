@@ -1,0 +1,5 @@
+---
+deployment:
+ tasks:
+ - export DEPLOYPATH=/home/thewe59/repositories/theweebase/
+ - /bin/cp * $DEPLOYPATH

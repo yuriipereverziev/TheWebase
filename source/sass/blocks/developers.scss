@@ -1,0 +1,261 @@
+.developers {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: rem(35px);
+  padding: 0 rem(15px);
+  background-color: $white-color;
+  background-image: url('../images/technologies.svg');
+  background-repeat: no-repeat;
+  background-position: center rem(20px);
+  background-size: auto;
+  box-sizing: border-box;
+
+  @include tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-position: center remt(5px);
+    background-size: 50%;
+    margin-bottom: remt(80px);
+    padding: 0 remt(50px);
+  }
+}
+
+.developers__title {
+  width: rem(288px);
+  margin: 0 auto;
+  margin-bottom: rem(80px);
+  padding-top: rem(27px);
+  color: $maastrich-blue;
+  font-size: rem(24px);
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+
+  @include tablet {
+    position: relative;
+    width: 100%;
+    margin-bottom: remt(130px);
+    padding-top: remt(35px);
+    // font-size: rem(32px);
+    // line-height: 40px;
+    opacity: 0;
+    bottom: -30px;
+  }
+
+  @include laptop {
+    margin-bottom: reml(190px);
+    font-size: reml(46px);
+  }
+
+  @include desktop {
+    margin-bottom: reml(230px);
+  }
+}
+
+.developers__list {
+  margin: 0 auto;
+  margin-bottom: rem(30px);
+  padding: 0;
+  list-style: none;
+
+  @include tablet {
+    width: remt(350px);
+    transform: scale(0.2);
+    transition: all 2s;
+  }
+
+  @include laptop {
+    width: reml(480px);
+  }
+}
+
+.developers__list.animate {
+  @include tablet {
+    transform: scale(1);
+  }
+}
+
+.developers__item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: rem(25px);
+
+  & p {
+    margin: 0;
+  }
+}
+
+.developers__item img {
+  border: 2px solid $maastrich-blue;
+  border-radius: 50%;
+
+  @include tablet {
+    width: remt(130px);
+    border-radius: remt(90px);
+  }
+
+  @include laptop {
+    width: reml(150px);
+  }
+}
+
+.developers__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  @include laptop {
+    font-size: reml(30px);
+  }
+}
+
+.developers__position {
+  width: rem(200px);
+  font-size: rem(18px);
+  margin-bottom: rem(5px);
+  color: $vivid-orange;
+
+  @include tablet {
+    margin-bottom: remt(15px);
+  }
+
+  @include laptop {
+    width: reml(260px);
+  }
+}
+
+.developers__name {
+  font-size: rem(18px);
+  color: $maastrich-blue;
+  font-weight: 700;
+
+  @include tablet {
+    font-size: remt(24px);
+  }
+}
+
+.developers__text {
+  width: rem(128px);
+  border-left: 1px solid $vivid-orange;
+  color: $maastrich-blue;
+  font-family: IBM Plex Serif;
+  font-size: rem(12px);
+
+  @include tablet {
+    width: remt(180px);
+    font-size: remt(16px);
+  }
+
+  @include laptop {
+    width: reml(290px);
+    font-size: reml(22px);
+  }
+}
+
+.developers-form {
+  margin: 0;
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 35px 45px;
+    border-radius: 35px;
+    background: $isabelline;
+    box-shadow: remt(40px) remt(40px) 0 rgba(11, 19, 43, 0.5);
+    opacity: 0;
+  }
+
+  @include laptop {
+    padding: 40px 50px;
+    // height: reml(430px);
+    // border-radius: 45px;
+    // box-shadow: reml(70px) reml(70px) 0 rgba(11, 19, 43, 0.5);
+  }
+
+  @include desktop {
+    height: reml(400px);
+  }
+}
+
+.developers-form__title {
+  position: relative;
+  margin: 0;
+  margin-bottom: rem(15px);
+  color: $maastrich-blue;
+  font-size: rem(20px);
+  font-weight: bold;
+  text-align: center;
+
+  &::before {
+    position: absolute;
+    top: -22px;
+    right: 60px;
+    width: 33px;
+    height: 31px;
+    background: url('../images/texts-icon.svg');
+    content: '';
+  }
+
+  @include laptop {
+    font-size: reml(30px);
+  }
+}
+
+.developers-form textarea {
+  width: rem(270px);
+}
+
+.developers-form input#user-adress {
+  width: rem(210px);
+}
+
+.developers-form input,
+.developers-form textarea,
+.developers-form__button {
+  position: relative;
+  opacity: 0;
+  right: -15px;
+}
+
+.developers-form__button {
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: rem(-5px);
+  width: rem(35px);
+  height: rem(35px);
+  padding: rem(25px);
+  border: 1px solid $maastrich-blue;
+  border-radius: 50%;
+  background-color: inherit;
+  background-image: url('../images/button-fly.svg');
+  background-repeat: no-repeat;
+  background-position: rem(7px) center;
+  font-size: 0;
+  cursor: pointer;
+
+  &:focus {
+    border: 1px solid $cornflower-blue;
+    border-radius: 50%;
+    outline: none;
+    box-shadow: 0 0 5px $cornflower-blue;
+  }
+
+  @include tablet {
+    background-size: 65%;
+  }
+
+  @include laptop {
+    &:hover {
+      transform: scale(1.05);
+      transition: 0.4s ease-out;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+  }
+}

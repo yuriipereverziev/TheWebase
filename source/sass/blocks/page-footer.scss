@@ -1,0 +1,20 @@
+.page-footer {
+  flex: 0 0 auto;
+  width: 100%;
+  min-height: 120px;
+  margin: 0 auto;
+
+  @include mobile-only {
+    background-image: url('../images/pattern-bottom.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+  }
+
+  @include tablet {
+    background-color: $isabelline;
+    background-image: url("../images/webase-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: 60px center;
+  }
+}

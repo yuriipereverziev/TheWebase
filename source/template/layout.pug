@@ -1,0 +1,39 @@
+doctype html
+html.no-js(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='author', content='Yurii Pereverziev, Dmytro Soluianov')
+    meta(name='description', content='The WEBASE Team wants to create a converting landing page for you. Lead your campaigns efficiently and let your customers find you fast. Check out our offer!')
+    meta(name='keywords', content='converting landing page, landing page that converts, landing page for an ebook, landing page for an app, landing page for marketing')
+    meta(name='google-site-verification', content='google35acefc6897676c1.html')
+    meta(property='og:title', content='Top performing landing page')
+    meta(property='og:url', content='https://thewebase.com')
+    meta(property='og:type', content='website')
+    meta(property='og:description', content='The WEBASE team wants to create a converting landing page for you. Lead your campaigns efficiently and let your customers find you fast.')
+    meta(propery='og:image', content='https://thewebase.comassets/images/webaselogof.png')
+    title
+      block title
+    link(rel='shortcut icon', href='favicon.ico', type='image/x-icon')
+    link(href='assets/css/style.min.css', rel='stylesheet')
+    link(rel='preload', href='assets/fonts/ibmplexsans-bold-webfont.woff2', as='font', type='font/woff2' crossorigin='anonymous')
+    link(rel='preload', href='assets/fonts/ibmplexsans-regular-webfont.woff2', as='font', type='font/woff2' crossorigin='anonymous')
+  body
+
+    include sections/header
+
+    block content
+
+    include sections/footer
+
+    include sections/modal-cookie
+
+    include sections/modal-form
+
+    include sections/modal-video
+
+    script(src='assets/js/foundation.js')
+
+    block script
+
+

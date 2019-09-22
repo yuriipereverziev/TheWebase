@@ -1,0 +1,38 @@
+// responsive
+
+@function rem($px) {
+  @return $px / 16px + 0rem;
+}
+
+@function remt($px) {
+  @return $px / 18px + 0rem;
+}
+
+@function reml($px) {
+  @return $px / 22px + 0rem;
+}
+
+@mixin mobile-only {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media screen and (min-width: 960px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+

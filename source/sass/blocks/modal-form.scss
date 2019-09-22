@@ -1,0 +1,157 @@
+.modal {
+  position: fixed;
+  z-index: 4;
+}
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 3;
+}
+
+.modal-overlay-show {
+  display: block;
+}
+
+.modal-form {
+  display: none;
+  width: 250px;
+  top: 30px;
+  left: 50%;
+  margin-left: -130px;
+  padding: 20px;
+  border: 1px solid $vivid-orange;
+  border-radius: 10px;
+  background-color: $white-color;
+
+  @include tablet {
+    width: 360px;
+    top: 50px;
+    margin-left: -170px;
+    padding: 25px 30px 30px 30px;
+    border-radius: 10px;
+    background-color: $white-color;
+    box-shadow: 0 0 30px rgba($maastrich-blue, 0.8);
+  }
+}
+
+.modal-form input,
+.modal-form textarea {
+  width: 200px;
+  padding: 5px;
+
+  @include tablet {
+    width: 300px;
+    padding: 10px;
+  }
+}
+
+.modal-form textarea {
+  height:80px;
+
+  @include tablet {
+    height: 100px;
+  }
+}
+
+.modal-form .form p {
+  padding-bottom: 10px;
+
+  @include tablet {
+    padding-bottom: 20px;
+  }
+}
+
+@keyframes bounce {
+  0% {transform: translateY(-2000px);}
+  70% {transform: translateY(30px);}
+  90% {transform: translateY(-10px);}
+  100% {transform: translateY(0);}
+}
+
+.modal-show {
+  display: block;
+  animation-name: bounce;
+  animation-duration: 0.6s;
+}
+
+.modal__logo {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.modal__logo--image {
+  vertical-align: bottom;
+}
+
+.modal ::-webkit-input-placeholder {/* WebKit browsers */
+  color: $maastrich-blue;
+  opacity: 0.5;
+}
+
+.modal ::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: $maastrich-blue;
+  opacity: 0.5;
+}
+
+.modal-button {
+  width: 100%;
+  padding: 10px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 22px;
+  height: 22px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  transition: all 600ms;
+
+  &:hover {
+    transform: rotate(90deg);
+  }
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 22px;
+  height: 1px;
+  background-color: $vivid-orange;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+@keyframes shake {
+  0%, 100% {transform: translateY(0);}
+  10%, 30%, 50%, 70%, 90% {transform: translateY(-10px);}
+  20%, 40%, 60%, 80% {transform: translateY(10px);}
+
+  @include tablet {
+    0%, 100% {transform: translateX(0);}
+    10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+    20%, 40%, 60%, 80% {transform: translateX(10px);}
+  }
+}
+
+.modal-error {
+  animation-name: shake;
+  animation-duration: 0.6s;
+}

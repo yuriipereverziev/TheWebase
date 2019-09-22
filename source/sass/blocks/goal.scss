@@ -1,0 +1,81 @@
+.goal {
+  display: flex;
+  position: relative;
+  top: rem(-35px);
+  flex-direction: column;
+  align-items: center;
+  width: calc(100% - 2rem);
+  margin: 0 auto;
+  border-radius: 5px 5px 25px 25px;
+  background-color: $isabelline;
+  box-shadow: rem(2px) rem(2px) rem(7px) rgba(0, 0, 0, 0.25);
+
+  &::before {
+    position: absolute;
+    top: rem(25px);
+    right: rem(20px);
+    width: rem(80px);
+    height: rem(80px);
+    background-image: url('../images/goal.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    content: '';
+  }
+
+  @include tablet {
+    position: absolute;
+    top: remt(195px);
+    right: remt(60px);
+    width: remt(237px);
+    text-align: justify;
+    border-radius: none;
+    background-color: transparent;
+    box-shadow: none;
+    opacity: 0;
+
+    &::before {
+      top: remt(-45px);
+      right: remt(-53px);
+      width: remt(135px);
+      height: remt(135px);
+      background-size: 70%;
+    }
+  }
+
+  @include laptop {
+    top: reml(260px);
+    width: reml(330px);
+  }
+
+  @include desktop {
+    top: reml(370px);
+    right: reml(100px);
+  }
+}
+
+.goal__text {
+  margin: 0;
+  margin-bottom: rem(27px);
+  padding: rem(40px) rem(22px) 0 rem(17px);
+  font-family: IBM Plex Serif;
+  color: $maastrich-blue;
+
+  @include tablet {
+    padding: 0;
+    margin-bottom: remt(20px);
+  }
+
+  @include laptop {
+    margin-bottom: reml(30px);
+  }
+}
+
+.goal__text--color {
+  color: $vivid-orange;
+  font-weight: 600;
+}
+
+.goal__button {
+  margin-bottom: rem(30px);
+}
+

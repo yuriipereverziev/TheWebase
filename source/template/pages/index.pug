@@ -1,7 +1,10 @@
-extends ../_template
+extends ../layout
 
-block variables
-  - var title = 'Home page'
+block title
+	| Converting landing pages by TheWEBASE Team
 
 block content
-  include ../common/_greating
+	include ../sections/main-index
+
+block script
+	script(src='assets/js/script-min.js')

@@ -1,0 +1,64 @@
+.cookie-policy {
+  width: rem(320px);
+  padding: 0 rem(20px);
+  margin: 0 auto;
+
+  @include tablet {
+    width: 100%;
+    margin-top: rem(150px);
+    margin-bottom: rem(50px);
+  }
+}
+
+.cookie__sublist-item p,
+.cookie__title {
+  display: inline;
+  margin: 0;
+}
+
+.cookie-policy--image {
+  text-align: center;
+}
+
+.cookie-policy ol {
+  counter-reset: item;
+  padding: 0;
+  margin: 0;
+}
+
+.cookie__list-item {
+  padding-left: rem(30px);
+}
+
+.cookie__list-item,
+.cookie__sublist-item {
+  display: block;
+}
+
+.cookie__title-header {
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.cookie__title {
+  padding-left: rem(15px);
+  text-transform: uppercase;
+}
+
+.cookie__sublist-item {
+  margin-bottom: rem(15px);
+}
+
+.cookie__ordered-list li::before {
+  content: counters(item, '.') ' ';
+  counter-increment: item;
+  margin-left: rem(-30px);
+  padding-right: rem(2px);
+  color: $vivid-orange;
+}
+
+.questions-for-us p {
+  margin: 0;
+  margin-bottom: rem(10px);
+}

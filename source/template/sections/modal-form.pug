@@ -1,0 +1,20 @@
+section.modal.modal-form
+	h2.visually-hidden Contact us
+	.modal__logo.logo
+		img.modal__logo--image(src='assets/images/webase-mobile.svg', alt="The WEBASE team's logo")
+	form.form(action='handler.php', method='POST')
+		p
+			label.visually-hidden(for='user-name') Your name
+			input#user-name(type='text', name='firstname', placeholder='Your name', autocomplete='off')
+		p
+			label.visually-hidden(for='user-phone') Phone
+			input#user-phone(type='tel', name='phone', placeholder='Phone', autocomplete='off')
+		p
+			label.visually-hidden(for='user-email') Your e-mail
+			input#user-email(type='email', name='email', placeholder='Your e-mail', autocomplete='off')
+		p
+			label.visually-hidden(for='user-text') Your message
+			textarea#user-text(placeholder='Your message', rows='3', cols='31', name='text')
+		button.modal-button.button(type='submit', aria-label='send form') Send
+	button.modal-close(type='button', aria-label='close form')
+.modal-overlay

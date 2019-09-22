@@ -1,6 +1,7 @@
 {
   "name": "Portfolio",
   "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "^1.0.0",
     "browser-sync": "^2.26.7",
     "del": "^4.1.1",
     "gulp": "^4.0.2",
@@ -12,7 +13,6 @@
     "gulp-eslint": "^6.0.0",
     "gulp-imagemin": "^6.0.0",
     "gulp-install": "^1.1.0",
-    "gulp-less": "^4.0.1",
     "gulp-load-plugins": "^1.6.0",
     "gulp-minify": "^3.1.0",
     "gulp-notify": "^3.2.0",
@@ -22,12 +22,40 @@
     "gulp-replace": "^1.0.0",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
+    "gulp-stylelint": "^9.0.0",
     "gulp-svg-sprite": "^1.5.0",
     "gulp-svgmin": "^2.2.0",
-    "gulp-webp": "^4.0.1"
+    "gulp-webp": "^4.0.1",
+    "gulp-webpcss": "^1.1.1",
+    "plyr": "^3.5.6",
+    "sass-lint": "^1.13.1",
+    "stylelint": "^10.1.0",
+    "stylelint-config-recess-order": "^2.0.3",
+    "stylelint-config-standard": "^18.3.0"
   },
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "gulp-stylelint \"source/sass/**/*.scss\" --syntax scss",
+    "test": "npm run editorconfig && npm run stylelint"
+  },
+  "editorconfig-cli": [
+    "*.html",
+    "*.json",
+    "*.js",
+    "source/js/**/*.js",
+    "source/images/**/*.svg",
+    "source/sass/**/*.{sass,scss}"
+  ],
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
   "dependencies": {
     "jquery": "^3.4.1",
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "postcss": "^7.0.17",
+    "react-player": "^1.13.0",
+    "video.js": "^7.6.0"
   }
 }

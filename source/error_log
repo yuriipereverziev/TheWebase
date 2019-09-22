@@ -1,0 +1,22 @@
+[17-May-2019 19:46:16 UTC] PHP Fatal error:  Class 'PHPMailer' not found in /home/thewe59/public_html/index.php on line 4
+[17-May-2019 19:51:55 UTC] PHP Warning:  require(PHPMailerAutoload.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/thewe59/public_html/index.php on line 2
+[17-May-2019 19:51:55 UTC] PHP Warning:  require(PHPMailerAutoload.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/thewe59/public_html/index.php on line 2
+[17-May-2019 19:51:55 UTC] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required 'PHPMailerAutoload.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/thewe59/public_html/index.php on line 2
+[18-May-2019 08:23:39 UTC] PHP Warning:  require(PHPMailerAutoload.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/thewe59/public_html/index.php on line 2
+[18-May-2019 08:23:39 UTC] PHP Warning:  require(PHPMailerAutoload.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/thewe59/public_html/index.php on line 2
+[18-May-2019 08:23:39 UTC] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required 'PHPMailerAutoload.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/thewe59/public_html/index.php on line 2
+[18-May-2019 09:15:24 UTC] PHP Warning:  require(PHPMailerAutoload.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/thewe59/public_html/index.php on line 2
+[18-May-2019 09:15:24 UTC] PHP Warning:  require(PHPMailerAutoload.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/thewe59/public_html/index.php on line 2
+[18-May-2019 09:15:24 UTC] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required 'PHPMailerAutoload.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/thewe59/public_html/index.php on line 2
+[18-May-2019 09:16:26 UTC] PHP Warning:  require(PHPMailerAutoload.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/thewe59/public_html/index.php on line 3
+[18-May-2019 09:16:26 UTC] PHP Warning:  require(PHPMailerAutoload.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/thewe59/public_html/index.php on line 3
+[18-May-2019 09:16:26 UTC] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required 'PHPMailerAutoload.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/thewe59/public_html/index.php on line 3
+[18-May-2019 09:18:25 UTC] PHP Parse error:  syntax error, unexpected '[' in /home/thewe59/public_html/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 304
+[18-May-2019 09:24:01 UTC] PHP Parse error:  syntax error, unexpected '[' in /home/thewe59/public_html/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 304
+[18-May-2019 09:57:19 UTC] PHP Parse error:  syntax error, unexpected '[' in /home/thewe59/public_html/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 304
+[18-May-2019 10:05:03 UTC] PHP Parse error:  syntax error, unexpected '[' in /home/thewe59/public_html/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 304
+[18-May-2019 10:05:36 UTC] PHP Parse error:  syntax error, unexpected '[' in /home/thewe59/public_html/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 304
+[18-May-2019 10:27:18 UTC] PHP Parse error:  syntax error, unexpected '[' in /home/thewe59/public_html/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 304
+[18-May-2019 10:28:32 UTC] PHP Parse error:  syntax error, unexpected '[' in /home/thewe59/public_html/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 304
+[18-May-2019 10:31:06 UTC] PHP Parse error:  syntax error, unexpected '[' in /home/thewe59/public_html/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 304
+[23-May-2019 10:22:30 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/thewe59/public_html/phpmailer/class.smtp.php:234) in /home/thewe59/public_html/handler.php on line 35

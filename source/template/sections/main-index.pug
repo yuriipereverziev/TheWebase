@@ -1,0 +1,62 @@
+main.page-main
+  section.goal
+    h2.visually-hidden Our goal
+    p.goal__text
+      span.goal__text--color The goal
+      |   is to comunicate, in the best possible way how your product solves visitor’s problem, by means of a
+      cite landing page
+    button.goal__button.button(type='button', aria-label='Get a landing page')
+      |  Get a landing page
+  section.propose
+    h2.propose__title Make your visitors applaud after landing
+    p.propose__text
+      |  Okey, you’re
+      em  launching
+      |  a new product or making a very special
+      em  offer.
+      |  Your potential customers  may have gone a long way through
+      em  search engines
+      |   or
+      em  social media
+      |  following your
+      em  marketing
+      |  campaign. Now, a landing page is the place where they become
+      span.propose__text--color
+        em  your real customers.
+    button.propose__button.button(type='button', aria-label='Contact us')
+      |  Contact us
+  section.developers
+    h2.developers__title We’re a Ukrainian team of two
+    ul.developers__list
+      li.developers__item
+        picture
+          source(type='image/webp', srcset='assets/images/yurii.webp', media='(max-width: 767px)')
+          source(type='image/jpg', srcset='assets/images/yurii.jpg' media='(max-width: 767px)')
+          source(type='image/webp', srcset='assets/images/yurii-desktop.webp' media='(min-width: 768px)')
+          source(type='image/jpg', srcset='assets/images/yurii-desktop.jpg' media='(min-width: 768px)')
+          img(src='assets/images/yurii.jpg', alt='Yurii web-developer')
+        .developers__wrapper
+          p.developers__name Yurii
+          h3.developers__position Web developer
+          q.developers__text It has to be fast, they don’t have time to wait for it to load
+      li.developers__item
+        picture
+          source(type='image/webp', srcset='assets/images/dima.webp' media='(max-width: 767px)')
+          source(type='image/png', srcset='assets/images/dima.jpg' media='(max-width: 767px)')
+          source(type='image/webp', srcset='assets/images/dima-desktop.webp' media='(min-width: 768px)')
+          source(type='image/png', srcset='assets/images/dima-desktop.jpg' media='(min-width: 768px)')
+          img(src='assets/images/dima.jpg' alt='Dmytro Design & SEO')
+        .developers__wrapper
+          p.developers__name Dmytro
+          h3.developers__position UX/UI Designer
+          q.developers__text A well designed product solves problem
+    section.developers-form.form
+      h2.developers-form__title Chat with us
+      form.form.form-erorr(action='handler.php', method='POST')
+        p.form__input-text
+          label.visually-hidden(for='user-message') Your message
+          textarea#user-message(placeholder='Your message', rows='5', cols='30', name='text')
+        p.form__input-email
+          label.visually-hidden(for='user-adress') Your e-mail
+          input#user-adress(type='email', name='email', placeholder='Your e-mail', autocomplete='off')
+        button.developers-form__button(type='submit', aria-label='send form') Send form

@@ -1,7 +1,8 @@
 'use strict';
 
 module.exports = [
-  './gulp/tasks/less.js',
+  './gulp/tasks/copy.assets.js',
+  './gulp/tasks/sass.js',
   './gulp/tasks/serve.js',
   './gulp/tasks/pug.js',
   './gulp/tasks/watch.js',
@@ -12,7 +13,7 @@ module.exports = [
   './gulp/tasks/js.lint.js',
   './gulp/tasks/imagemin.js',
   './gulp/tasks/webp.js',
-  './gulp/tasks/copy.image.js',
-  './gulp/tasks/sprite.svg.js'
+  './gulp/tasks/sprite.svg.js',
+  './gulp/tasks/stylelint.js'
 ];
 
