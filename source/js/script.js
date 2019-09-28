@@ -15,23 +15,14 @@ var video = document.querySelector('.modal-video');
 var playBtn = document.querySelector('.modal-video__button');
 var videoClose = document.querySelector('.video-close');
 var vid = document.getElementById('myVideo');
-// var pictureInPicture = document.querySelector('.vjs-picture-in-picture-control');
 
 
-// var player = videojs('my-player');
+// const element = $('#myVideo')[0]; // Get DOM element from jQuery collection
 
-// var options = {};
-
-// var player = videojs('my-player', options, function onPlayerReady() {
-//   videojs.log('Your player is ready!');
-
-//   // In this context, `this` is the player that was created by Video.js.
-//   this.play();
-
-//   // How about an event listener?
-//   this.on('ended', function() {
-//     videojs.log('Awww...over so soon?!');
-//   });
+// $('.modal-video__button').on('click', () => {
+//   if (screenfull.isEnabled) {
+//     screenfull.request(element);
+//   }
 // });
 
   playBtn.addEventListener('click', function (evt) {
@@ -41,7 +32,7 @@ var vid = document.getElementById('myVideo');
     setTimeout(function(){
       document.getElementById('myVideo').play();
         }, 500);
-    if(window.innerWidth>=768) {
+    if(window.innerWidth) {
       overlay.classList.add('modal-overlay-show');
     }
   });
@@ -127,3 +118,31 @@ var vid = document.getElementById('myVideo');
 
   document.documentElement.classname += (Modernizr.webp ? "webp" : "no-webp");
   document.documentElement.classList.remove("no-js");
+
+
+
+  var parallax = (function () {
+  var bg = document.querySelector('.header__main');
+  var user = document.querySelector('.header__title');
+  var sectionText = document.querySelector('.goal');
+
+  return {
+    move: function (block, windowScroll, strafeAmount) {
+      var strafe = windowScroll / -strafeAmount + '%';
+      var transformString = 'translate3d(0,' + strafe + ', 0)';
+
+      var style = block.style;
+
+      style.transform = transformString;
+      style.webkitTransform = transformString;
+    },
+
+    init: function (wScroll) {
+      this.move(bg, wScroll, 45);
+      this.move(sectionText, wScroll, 20);
+      this.move(user, wScroll, 3);
+    }
+  }
+
+}());
+
