@@ -13,6 +13,7 @@
   display: flex;
   position: relative;
   align-items: center;
+  justify-content: center;
   width: 100%;
   height: 60vw;
   margin: 0 auto;
@@ -28,24 +29,8 @@
   }
 
   @include desktop {
-    height: 54.5vmax;
+    // height: 54.5vmax;
     padding: 0 reml(100px);
-  }
-}
-
-.no-webp .header__main {
-  background-image: url(../images/hero-img.jpg);
-
-  @include tablet {
-    background-image: url(../images/hero-img-desktop.jpg);
-  }
-}
-
-.header__main {
-  background-image: url(../images/hero-img.webp);
-
-  @include tablet {
-    background-image: url(../images/hero-img-desktop.webp);
   }
 }
 
@@ -70,6 +55,7 @@
 
 .header__title {
   display: flex;
+  position: absolute;
   flex-wrap: wrap;
   justify-content: center;
   width: rem(320px);

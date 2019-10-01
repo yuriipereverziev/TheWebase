@@ -2,6 +2,10 @@ header.page-header
   .page-header__logo.logo
     img.page-header__logo--image(src='assets/images/webase-mobile.svg', alt="The WEBASE team's logo")
   section.header__main
+    .header__background
+      picture
+        source(srcset="assets/images/hero-img-desktop.jpg" media="(max-width: 600px)" type="image/jpeg")
+        img(src="mdn-logo-narrow.png" alt="MDN")
     h1.header__title
       |  Landing pages
       span.header__subtitle
@@ -9,3 +13,10 @@ header.page-header
         |  primary product
     button.modal-video__button(type='submit', aria-label='video') play
   .header__overlay
+
+
+//-     <picture>
+//-   <source srcset="img/awesomeWebPImage.webp" type="image/webp">
+//-   <source srcset="img/creakyOldJPEG.jpg" type="image/jpeg">
+//-   <img src="img/creakyOldJPEG.jpg" alt="Alt Text!">
+//- </picture>
