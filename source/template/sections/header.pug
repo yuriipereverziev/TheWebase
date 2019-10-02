@@ -4,8 +4,9 @@ header.page-header
   section.header__main
     .header__background
       picture
-        source(srcset="assets/images/hero-img-desktop.jpg" media="(max-width: 600px)" type="image/jpeg")
-        img(src="mdn-logo-narrow.png" alt="MDN")
+        source(srcset="assets/images/hero-img-desktop.webp" type="image/webp")
+        source(srcset="assets/images/hero-img-desktop.jpg" type="image/jpeg")
+        img(src="assets/images/hero-img-desktop.jpg" alt="background image")
     h1.header__title
       |  Landing pages
       span.header__subtitle
@@ -13,10 +14,3 @@ header.page-header
         |  primary product
     button.modal-video__button(type='submit', aria-label='video') play
   .header__overlay
-
-
-//-     <picture>
-//-   <source srcset="img/awesomeWebPImage.webp" type="image/webp">
-//-   <source srcset="img/creakyOldJPEG.jpg" type="image/jpeg">
-//-   <img src="img/creakyOldJPEG.jpg" alt="Alt Text!">
-//- </picture>

@@ -25,12 +25,6 @@
   @include tablet {
     align-items: flex-start;
     height: 51vw;
-    padding: 0 remt(50px);
-  }
-
-  @include desktop {
-    // height: 54.5vmax;
-    padding: 0 reml(100px);
   }
 }
 

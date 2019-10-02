@@ -16,15 +16,6 @@ var playBtn = document.querySelector('.modal-video__button');
 var videoClose = document.querySelector('.video-close');
 var vid = document.getElementById('myVideo');
 
-
-// const element = $('#myVideo')[0]; // Get DOM element from jQuery collection
-
-// $('.modal-video__button').on('click', () => {
-//   if (screenfull.isEnabled) {
-//     screenfull.request(element);
-//   }
-// });
-
   playBtn.addEventListener('click', function (evt) {
     evt.preventDefault();
     video.classList.add('video-show');
@@ -36,12 +27,6 @@ var vid = document.getElementById('myVideo');
       overlay.classList.add('modal-overlay-show');
     }
   });
-
-  // pictureInPicture.addEventListener('click', function (evt) {
-  //   evt.preventDefault();
-  //   video.classList.remove('video-show');
-  //   overlay.classList.remove('modal-overlay-show');
-  // });
 
   videoClose.addEventListener('click', function (evt) {
     evt.preventDefault();
@@ -108,41 +93,28 @@ var vid = document.getElementById('myVideo');
     }
   });
 
-  // Modernizr.on('webp', function (result) {
-  //   if (result) {
-  //     // supported
-  //   } else {
-  //     // not-supported
-  //   }
-  // });
+//   var parallax = (function () {
+//   var bg = document.querySelector('.header__main');
+//   var user = document.querySelector('.header__title');
+//   var sectionText = document.querySelector('.goal');
 
-  document.documentElement.classname += (Modernizr.webp ? "webp" : "no-webp");
-  document.documentElement.classList.remove("no-js");
+//   return {
+//     move: function (block, windowScroll, strafeAmount) {
+//       var strafe = windowScroll / -strafeAmount + '%';
+//       var transformString = 'translate3d(0,' + strafe + ', 0)';
 
+//       var style = block.style;
 
+//       style.transform = transformString;
+//       style.webkitTransform = transformString;
+//     },
 
-  var parallax = (function () {
-  var bg = document.querySelector('.header__main');
-  var user = document.querySelector('.header__title');
-  var sectionText = document.querySelector('.goal');
+//     init: function (wScroll) {
+//       this.move(bg, wScroll, 45);
+//       this.move(sectionText, wScroll, 20);
+//       this.move(user, wScroll, 3);
+//     }
+//   }
 
-  return {
-    move: function (block, windowScroll, strafeAmount) {
-      var strafe = windowScroll / -strafeAmount + '%';
-      var transformString = 'translate3d(0,' + strafe + ', 0)';
-
-      var style = block.style;
-
-      style.transform = transformString;
-      style.webkitTransform = transformString;
-    },
-
-    init: function (wScroll) {
-      this.move(bg, wScroll, 45);
-      this.move(sectionText, wScroll, 20);
-      this.move(user, wScroll, 3);
-    }
-  }
-
-}());
+// }());
 
