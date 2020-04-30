@@ -52,7 +52,7 @@
     "Firefox ESR"
   ],
   "dependencies": {
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "normalize.css": "^8.0.1",
     "postcss": "^7.0.17",
     "react-player": "^1.13.0",
